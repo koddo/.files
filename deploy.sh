@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ $1 != "NOW" ]]; then
-    echo "usage: ./deploy.sh NOW"
-    echo
-    echo "will also ~/.files.backup"
-    exit 1
-fi
-
-
-
+echo "creating dir $backupdir"
 cd "$(dirname "$0")"
 backupdir=~/.files.backup
 if [[ -e "$backupdir" ]] ; then
@@ -30,6 +22,6 @@ done
 
 
 
-echo 'my customs'
+echo 'configuring'
 git config --global core.excludesfile ~/.gitignore_global
 
