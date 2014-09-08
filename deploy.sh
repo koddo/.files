@@ -24,4 +24,6 @@ done
 
 echo 'configuring'
 git config --global core.excludesfile ~/.gitignore_global
-
+git config --global user.name 'Alex Scherbanov'
+git config --global user.email 'alex@egotv.ru'
+git config --global push.default simple
