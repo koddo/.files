@@ -29,3 +29,5 @@ source /opt/local/bin/virtualenvwrapper.sh-2.7
 [[ -s $HOME/.pythonz/etc/bashrc ]] && source $HOME/.pythonz/etc/bashrc
 
 export PS1="\w\$ "
+
+export HISTTIMEFORMAT="%d/%m/%Y %T "
