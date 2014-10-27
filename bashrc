@@ -31,3 +31,8 @@ source /opt/local/bin/virtualenvwrapper.sh-2.7
 export PS1="\w\$ "
 
 export HISTTIMEFORMAT="%d/%m/%Y %T "
+
+# TODO: cross-platform
+export ANDROID_HOME=~/Development/adt-bundle-mac-x86_64-20140702/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools

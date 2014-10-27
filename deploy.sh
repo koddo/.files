@@ -31,5 +31,7 @@ git config --global push.default simple
 # TODO: move this to dedicated mac file
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock   # disable useless dashboard
 
+# to avoid sudo when using npm install, added .npm_local/bin to PATH and .npmrc
+mkdir -p ~/.npm_local
 
 
