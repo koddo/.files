@@ -37,3 +37,7 @@ export HISTTIMEFORMAT="%d/%m/%Y %T "
 export ANDROID_HOME=~/Development/adt-bundle-mac-x86_64-20140702/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export PATH=$PATH:~/.bin_local
+. ~/.kerl_erlang/17.3/activate
+
