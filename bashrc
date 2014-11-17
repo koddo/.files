@@ -39,5 +39,5 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export PATH=$PATH:~/.bin_local
-. ~/.kerl_erlang/17.3/activate
+. ~/.kerl_erlang/17.1/activate
 
