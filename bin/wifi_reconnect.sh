@@ -8,4 +8,4 @@ while [[ $(ifconfig en1 | grep inactive) != "" ]] ; do
     sleep 15
 done
 
-
+tell_when_done.sh wifi reconnect
