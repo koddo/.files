@@ -7,3 +7,4 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export EMACSCLIENT="/Users/alex/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
 export PATH=~/.bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 export PATH=~/.npm_local/bin:$PATH
+

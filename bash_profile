@@ -3,6 +3,3 @@
 source ~/.profile
 source ~/.bashrc
 
-
-
-
