@@ -39,7 +39,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export PATH=$PATH:~/.bin_local
-. ~/.kerl_erlang/17.1/activate
+. ~/.kerl_erlang/17.5/activate
 
 docker-enter() {
   boot2docker ssh '[ -f /var/lib/boot2docker/nsenter ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter'
