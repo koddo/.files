@@ -1,0 +1,6 @@
+KERL_INSTALL_MANPAGES=yes
+KERL_INSTALL_HTMLDOCS=yes
+
+# for erlang observer
+# TODO: cross-platform
+KERL_CONFIGURE_OPTIONS="--with-wx-config=/opt/local/Library/Frameworks/wxWidgets.framework/Versions/wxWidgets/3.0/bin/wx-config"
