@@ -14,12 +14,14 @@ alias ~="cd ~"
 alias du="du -h"
 alias mkdir="mkdir -pv"
 alias vi="vim"
+alias bc="bc -l"
 alias historyrepeating="history -a; history -c; history -r"
 alias btt_restart="osascript -e 'tell application \"BetterTouchTool\" to quit' && open -a BetterTouchTool"
 alias bgt="bg; wait; tell_when_done.sh"
 
 alias gs="git status"
 alias gaa="git add --all"
+
 
 # TODO: cross-platform
 export WORKON_HOME=~/.python_virtualenvs
