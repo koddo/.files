@@ -22,6 +22,8 @@ alias bgt="bg; wait; tell_when_done.sh"
 alias gs="git status"
 alias gaa="git add --all"
 
+alias ec="emacsclient -n"
+
 
 # TODO: cross-platform
 export WORKON_HOME=~/.python_virtualenvs
@@ -50,3 +52,6 @@ docker-enter() {
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export PATH=~/Applications/Emacs.app/Contents/MacOS/bin:$PATH
+
