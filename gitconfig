@@ -1,0 +1,25 @@
+[core]
+	excludesfile = ~/.gitignore_global
+[user]
+	name = Alex Scherbanov
+	email = alex@egotv.ru
+[push]
+	default = simple
+
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[merge]
+    conflictstyle = diff3
