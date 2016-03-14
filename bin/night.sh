@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
-open -a FAHControl
-FAHClient --send-unpause
+if [[ -z "$@" ]]; then
+    open -a FAHControl
+    FAHClient --send-unpause
+    open -a Transmission
+else
+    osascript -e 'quit app "FAHControl"'
+    FAHClient --send-pause
+    killall Transmission
+    # osascript -e 'quit app "Transmission"' --- this didn't work because it asks if we really want to quit
+    # I'd like to use killall -QUIT, but in my set up I have a message "Transmission quit unexpectedly"
+fi
 
-open -a Transmission
 
