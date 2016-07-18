@@ -10,11 +10,13 @@ on run argv
             # do shell script "open /Applications/Copy.app"
             do shell script "open /Applications/OneDrive.app"
             do shell script "open '/Applications/Google Drive.app'"
+            do shell script "open '/Applications/Dropbox.app'"
         else if (cmdd is equal to "off") then
             tell application "Yandex.Disk" to quit
             tell application "Google Drive" to quit
             # tell application "Copy" to quit
             tell application "OneDrive" to quit
+            tell application "Dropbox" to quit
         else
             return "usage: on | off"
         end if
