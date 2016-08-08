@@ -55,3 +55,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export PATH=~/Applications/Emacs.app/Contents/MacOS/bin:$PATH
 
+bind "\C-t":forward-search-history
