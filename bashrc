@@ -18,6 +18,7 @@ alias bc="bc -l"
 alias historyrepeating="history -a; history -c; history -r"
 alias btt_restart="osascript -e 'tell application \"BetterTouchTool\" to quit' && open -a BetterTouchTool"
 alias bgt="bg; wait; tell_when_done.sh"
+alias fgt="fg; tell_when_done.sh"
 
 alias gs="git status"
 alias gaa="git add --all"
