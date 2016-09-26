@@ -1,6 +1,7 @@
 # -*- mode: shell-script -*-
 
 # MacPorts Installer addition on 2014-08-25_at_18:21:08: adding an appropriate PATH variable for use with MacPorts.
+export PATH=~/Applications/Emacs.app/Contents/MacOS/bin:$PATH
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 

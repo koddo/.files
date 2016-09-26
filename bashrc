@@ -54,6 +54,5 @@ docker-enter() {
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export PATH=$PATH:~/Applications/Emacs.app/Contents/MacOS/bin
 
 bind "\C-t":forward-search-history
