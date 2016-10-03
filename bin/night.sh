@@ -3,7 +3,7 @@
 if [[ -z "$@" ]]; then
     open -a FAHControl
     FAHClient --send-unpause
-    open -a Transmission
+    # open -a Transmission
     osascript -e 'display notification "good night" with title ""'
     say good night
 else
