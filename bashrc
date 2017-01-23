@@ -39,10 +39,10 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1   # I use customized indication, see below
 source_when_exists () {
     [[ -f "$1" ]] && source "$1"
 }
-MY_DEFAULT_PYTHON=default352
+MY_DEFAULT_PYTHON=default360
 source_when_exists /opt/local/bin/virtualenvwrapper.sh-2.7
-source_when_exists .python_virtualenvs/$MY_DEFAULT_PYTHON/bin/activate
-source_when_exists $HOME/.pythonz/etc/bashrc
+source_when_exists ~/.python_virtualenvs/$MY_DEFAULT_PYTHON/bin/activate
+# source_when_exists ~/.pythonz/etc/bashrc
 function virtualenv_name() {
     VENV="${VIRTUAL_ENV##*/}"      # strip out the path and just leave the env name
     if [[ -z "$VENV" ]]; then
