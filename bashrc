@@ -30,7 +30,6 @@ alias ec="emacsclient -n"
 bind "\C-t":forward-search-history
 
 
-
 # TODO: cross-platform
 export WORKON_HOME=~/.python_virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
@@ -45,15 +44,16 @@ source_when_exists ~/.python_virtualenvs/$MY_DEFAULT_PYTHON/bin/activate
 # source_when_exists ~/.pythonz/etc/bashrc
 function virtualenv_name() {
     VENV="${VIRTUAL_ENV##*/}"      # strip out the path and just leave the env name
-    if [[ -z "$VENV" ]]; then
-        echo '(no_venv)'
-    else
+    if [[ -n "$VENV" ]]; then
         [[ "$VENV" != "$MY_DEFAULT_PYTHON" ]] && echo "($VENV) "
+    else
+        echo '(no_venv)'
     fi
 }
 
 export PS1="$(virtualenv_name)\w\$ "     # same as in ~/.python_virtualenvs/postactivate
 
+export PATH=$PATH:~/.bin_local
 
 
 # TODO: cross-platform
@@ -61,10 +61,10 @@ export PS1="$(virtualenv_name)\w\$ "     # same as in ~/.python_virtualenvs/post
 # export PATH=$PATH:$ANDROID_HOME/tools
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# export PATH=$PATH:~/.bin_local
 # . ~/.kerl_erlang/17.5/activate
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 
 
