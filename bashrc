@@ -23,6 +23,8 @@ alias fgt="fg; tell_when_done.sh"
 alias github-create-repo.sh='. github-create-repo.sh'
 
 alias gs="git status"
+alias gd="git diff"
+alias ga='git add'
 alias gaa="git add --all"
 
 alias ec="emacsclient -n"
