@@ -26,6 +26,8 @@ alias gs="git status"
 alias gd="git diff"
 alias ga='git add'
 alias gaa="git add --all"
+alias gc="f() { git commit -m \"\$*\"; }; f"
+alias gca="f() { git commit -a -m \"\$*\"; }; f"
 
 alias ec="emacsclient -n"
 
