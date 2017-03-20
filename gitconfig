@@ -1,5 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore_global
+	pager = less -+F -c
 [user]
 	name = Alex Scherbanov
 	email = alex@egotv.ru
