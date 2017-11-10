@@ -64,8 +64,9 @@ export PATH=$PATH:~/.bin_local
 
 # TODO: cross-platform
 # export ANDROID_HOME=~/Development/adt-bundle-mac-x86_64-20140702/sdk
-# export PATH=$PATH:$ANDROID_HOME/tools
-# export PATH=$PATH:$ANDROID_HOME/platform-tools
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # . ~/.kerl_erlang/17.5/activate
 
@@ -73,4 +74,16 @@ export PATH=$PATH:~/.bin_local
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
+## https://stackoverflow.com/questions/7171725/open-new-terminal-tab-from-command-line-mac-os-x/8188174#8188174
+function tab() {
+  osascript 2>/dev/null <<EOF
+    tell application "System Events"
+      tell process "Terminal" to keystroke "t" using command down
+    end
+    tell application "Terminal"
+      activate
+      do script with command "cd \"$PWD\"; $*" in window 1
+    end tell
+EOF
+}
 

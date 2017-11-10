@@ -6,6 +6,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 export EMACSCLIENT="/Users/alex/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
-export PATH=~/.bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=~/.bin:$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export PATH=~/.npm_local/bin:$PATH
 

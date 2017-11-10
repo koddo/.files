@@ -1,5 +1,5 @@
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/alex/.gitignore_global
 	pager = less -+F -c
 [user]
 	name = Alex Scherbanov
