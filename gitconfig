@@ -24,3 +24,8 @@
 
 [merge]
     conflictstyle = diff3
+
+[diff "gpg"]
+	textconv = gpg --no-tty --decrypt
+# https://www.git-scm.com/docs/gitattributes
+# https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes
