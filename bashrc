@@ -29,7 +29,7 @@ alias ga='git add'
 alias gaa="git add --all"
 alias gc="f() { git commit -m \"\$*\"; }; f"
 alias gca="f() { git commit -a -m \"\$*\"; }; f"
-alias gcemptymessage="git add --all && git commit --allow-empty-message -am '' && git push ; tell_when_done.sh"
+alias gcemptymessage="git add --all && git commit --allow-empty-message -am '' && git push && echo '--- ok ---'  ; tell_when_done.sh"
 
 
 alias ec="emacsclient -n"
