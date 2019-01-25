@@ -38,16 +38,17 @@ bind "\C-t":forward-search-history
 
 
 # TODO: cross-platform
-export WORKON_HOME=~/.python_virtualenvs
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-export VIRTUALENVWRAPPER_VIRTUALENV=virtualenv-2.7
-export VIRTUAL_ENV_DISABLE_PROMPT=1   # I use customized indication, see below
+# export WORKON_HOME=~/.python_virtualenvs
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+# export VIRTUALENVWRAPPER_VIRTUALENV=virtualenv-2.7
+# export VIRTUAL_ENV_DISABLE_PROMPT=1   # I use customized indication, see below
 source_when_exists () {
     [[ -f "$1" ]] && source "$1"
 }
-MY_DEFAULT_PYTHON=default360
-source_when_exists /opt/local/bin/virtualenvwrapper.sh-2.7
-source_when_exists ~/.python_virtualenvs/$MY_DEFAULT_PYTHON/bin/activate
+MY_DEFAULT_PYTHON=default3
+# source_when_exists /opt/local/bin/virtualenvwrapper.sh-2.7
+# source_when_exists ~/.python_virtualenvs/$MY_DEFAULT_PYTHON/bin/activate
+source_when_exists ~/.python_venv/$MY_DEFAULT_PYTHON/bin/activate
 # source_when_exists ~/.pythonz/etc/bashrc
 function virtualenv_name() {
     VENV="${VIRTUAL_ENV##*/}"      # strip out the path and just leave the env name
