@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os, random
 
@@ -22,4 +22,4 @@ for dirname, dirnames, filenames in os.walk('.'):
     #     # don't go into any .git directories.
     #     dirnames.remove('.git')
         
-print "\"" + random.choice(file_list) + "\"" 
+print(f'"{random.choice(file_list)}"') 
