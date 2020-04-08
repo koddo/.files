@@ -13,7 +13,7 @@ fi
 echo "creating dir $backupdir"
 mkdir -p "$backupdir"
 
-for file in $(ls -1 | grep -vE '(^\..*|README\.md|deploy\.sh|ssh_config|btt\.json\.gpg|rclone_sync_dropbox.app)') ; do
+for file in $(ls -1 | grep -vE '(^\..*|README\.md|deploy\.sh|ssh_config|btt\.json\.gpg|rclone_sync_dropbox.app|com\.wacom\.wacomtablet\.prefs)') ; do
     echo "symlinking ~/.$file" 
     mv ~/."$file" "$backupdir" 2>/dev/null
     ln -s ~/.files/"$file" ~/."$file"
