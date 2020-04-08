@@ -89,3 +89,21 @@ function tab() {
 EOF
 }
 
+# collect events for INTERVAL amount of time and then fire them all at once
+# well, not really
+# it's a naive implementation that does the job for me:
+# $ fswatch --one-per-batch --exclude '\.git' . | debounce 300 | while read ; do git commit ... ; done
+function debounce() {    
+    local INTERVAL LINE
+    INTERVAL="$1"
+    
+    while IFS='' read -r LINE || [[ -n "$LINE" ]] ; do
+        if [[ -z $(jobs -rp) ]]; then
+            (
+                sleep "$INTERVAL"
+                echo "$LINE"
+            ) &
+        fi
+    done
+}
+
